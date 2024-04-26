@@ -1,0 +1,7 @@
+mkdocs==1.6.0
+mkdocs-material==8.2.1
+Pygments
+mkdocs-video
+mkdocs-redirects
+markdown-exec
+markdown-callouts
