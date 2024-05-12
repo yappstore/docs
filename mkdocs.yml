@@ -144,10 +144,10 @@ extra:
   generator: false
   social:
   - icon: fontawesome/brands/github
-    link: https://github.com/theyappstore
+    link: https://github.com/yappstore
   - icon: fontawesome/brands/twitter
-    link: /
+    link: https://twitter.com/yappstore_ai
   - icon: fontawesome/brands/discord
-    link: https://discord.com/
+    link: https://discord.gg/9vdvUDz22V
 
 copyright: Copyright © 2024 The Yapp Store
