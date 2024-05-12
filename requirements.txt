@@ -5,3 +5,4 @@ mkdocs-video
 mkdocs-redirects
 markdown-exec
 markdown-callouts
+pymdown-extension

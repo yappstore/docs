@@ -2,7 +2,7 @@ site_name: 'The Yapp Store - Developer Docs'
 site_description: "Developer Documentation"
 site_url: 'https://docs.yappstore.ai'
 repo_name: 'docs'
-repo_url: 'https://github.com/theyappstore/docs'
+repo_url: 'https://github.com/yappstore/docs'
 
 ############################################################################################
 
@@ -14,12 +14,6 @@ nav:
     #   - Github: 
     #     - Git Introduction: developer_notes/operations/git/git_intro.md
     #     - Actions: developer_notes/operations/git/git_actions.md
-  - API: 
-    - developer_notes/index.md
-  - Reference: 
-    - developer_notes/index.md
-  - About: 
-    - developer_notes/index.md
 
 ############################################################################################
 
@@ -97,39 +91,39 @@ theme:
 
 
 markdown_extensions:
-- admonition
-- def_list
-- attr_list
-# - callouts
-- footnotes
-- md_in_html
-- meta
-- pymdownx.inlinehilite
-- pymdownx.highlight
-- pymdownx.snippets
-- pymdownx.superfences
-- pymdownx.details
-- pymdownx.magiclink
-- pymdownx.highlight
-- pymdownx.tabbed:
-    alternate_style: true 
-- pymdownx.emoji:
-    emoji_index: !!python/name:material.extensions.emoji.twemoji
-    emoji_generator: !!python/name:material.extensions.emoji.to_svg
-- pymdownx.superfences:
-    custom_fences:
-    - name: mermaid
-      class: mermaid
-      format: !!python/name:pymdownx.superfences.fence_code_format
-- pymdownx.tabbed:
-    alternate_style: true
-    slugify: !!python/object/apply:pymdownx.slugs.slugify
-      kwds:
-        case: lower
-- pymdownx.tasklist:
-    custom_checkbox: true
-- toc:
-    permalink: "¤"
+  - admonition
+  - def_list
+  - attr_list
+  # - callouts
+  - footnotes
+  - md_in_html
+  - meta
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true 
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: "¤"
 
 
 plugins:
