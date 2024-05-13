@@ -10,6 +10,9 @@ nav:
   - Home: index.md
   - Documentation: 
     - developer_notes/index.md
+  - Monetization:
+      - developer_notes/monetization.md
+
     # - Operations:
     #   - Github: 
     #     - Git Introduction: developer_notes/operations/git/git_intro.md
