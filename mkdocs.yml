@@ -1,20 +1,34 @@
-site_name: 'The Yapp Store - Developer Docs'
+site_name: "The Yapp Store - Developer Docs"
 site_description: "Developer Documentation"
-site_url: 'https://docs.yappstore.ai'
-repo_name: 'docs'
-repo_url: 'https://github.com/yappstore/docs'
+site_url: "https://docs.yappstore.ai"
+repo_name: "docs"
+repo_url: "https://github.com/yappstore/docs"
 
 ############################################################################################
 
 nav:
-  - Home: index.md
-  - Documentation: 
-    - developer_notes/index.md
+  - Documentation:
+      - content/overview/getting_started.md
+      - content/overview/cross_platform.md
+      - content/overview/monetization.md
+      - content/overview/api.md
+      - content/overview/security.md
+      - content/overview/about.md
   - Monetization:
-      - developer_notes/monetization.md
+      - content/monetization/monetization.md
+  - SDK:
+      - content/SDK/sdk.md
+  - Security:
+      - content/security/security.md
+      - content/security/faq/faq.md
+  - About:
+    - content/about/about.md
+  - Contact Us:
+    - content/contact/contact.md
+
 
     # - Operations:
-    #   - Github: 
+    #   - Github:
     #     - Git Introduction: developer_notes/operations/git/git_intro.md
     #     - Actions: developer_notes/operations/git/git_actions.md
 
@@ -39,7 +53,7 @@ theme:
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
   custom_dir: docs/templates
-  logo: https://raw.githubusercontent.com/akkupy/akkupy/main/assets/favicon.ico
+  logo: https://raw.githubusercontent.com/akkupy/akkupy/main/favicon.png
   features:
     - announce.dismiss
     - content.action.edit
@@ -64,34 +78,33 @@ theme:
   #     toggle:
   #       icon: material/toggle-switch-off-outline
   #       name: Switch to dark mode
-  #   - media: "(prefers-color-scheme: dark)" 
+  #   - media: "(prefers-color-scheme: dark)"
   #     scheme: slate
   #     toggle:
   #       icon: material/toggle-switch
   #       name: Switch to light mode
   palette:
-  - media: "(prefers-color-scheme)"
-    toggle:
-      icon: material/brightness-auto
-      name: Switch to light mode
-  - media: "(prefers-color-scheme: light)"
-    scheme: default
-    primary: teal
-    accent: purple
-    toggle:
-      icon: material/weather-sunny
-      name: Switch to dark mode
-  - media: "(prefers-color-scheme: dark)"
-    scheme: slate
-    primary: black
-    accent: lime
-    toggle:
-      icon: material/weather-night
-      name: Switch to system preference
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
   # icon:
-  #   admonition: 
+  #   admonition:
   #     example: fontawesome/solid/flask
-
 
 markdown_extensions:
   - admonition
@@ -109,15 +122,15 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.highlight
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   # - pymdownx.emoji:
   #     emoji_index: !!python/name:material.extensions.emoji.twemoji
   #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.superfences:
       custom_fences:
-      - name: mermaid
-        class: mermaid
-        format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
       slugify: !!python/object/apply:pymdownx.slugs.slugify
@@ -126,8 +139,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - toc:
-      permalink: "¤"
-
+      permalink: "⛌"
 
 plugins:
   # - markdown-exec
@@ -146,11 +158,11 @@ extra:
     property: G-VHR0GFBR7Q
   generator: false
   social:
-  - icon: fontawesome/brands/github
-    link: https://github.com/yappstore
-  - icon: fontawesome/brands/twitter
-    link: https://twitter.com/yappstore_ai
-  - icon: fontawesome/brands/discord
-    link: https://discord.gg/9vdvUDz22V
+    - icon: fontawesome/brands/github
+      link: https://github.com/yappstore
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yappstore_ai
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/9vdvUDz22V
 
-copyright: Copyright © 2024 yappstore.ai | The Yapp Store 
+copyright: Copyright © 2024 yappstore.ai | The Yapp Store
