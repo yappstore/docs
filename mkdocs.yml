@@ -1,4 +1,4 @@
-site_name: "The Yapp Store - Developer Docs"
+site_name: "The Yapp Store | Developer Documentation"
 site_description: "Developer Documentation"
 site_url: "https://docs.yappstore.ai"
 repo_name: "docs"
@@ -13,7 +13,6 @@ nav:
       - content/overview/monetization.md
       - content/overview/api.md
       - content/overview/security.md
-      - content/overview/about.md
   - Monetization:
       - content/monetization/monetization.md
   - SDK:
@@ -84,17 +83,10 @@ theme:
   #       icon: material/toggle-switch
   #       name: Switch to light mode
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: purple
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
+    # - media: "(prefers-color-scheme)"
+    #   toggle:
+    #     icon: material/brightness-auto
+    #     name: Switch to light mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
@@ -102,6 +94,13 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to system preference
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
   # icon:
   #   admonition:
   #     example: fontawesome/solid/flask

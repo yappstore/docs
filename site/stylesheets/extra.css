@@ -29,9 +29,9 @@
     --md-primary-fg-color--light: #D9F6FA;
     --md-primary-fg-color--dark:  #2f3644;
     /* Primary color shades */
-    --md-primary-bg-color: pink; /*Header*/
-    --md-primary-bg-color--light: pink;
-    --md-text-link-color: pink;
+    --md-primary-bg-color: #002677; /*Header*/
+    --md-primary-bg-color--light: #002677;
+    --md-text-link-color: #FF612B;
     --md-typeset-a-color: magenta;
 
     --md-code-hl-color:                #FFFFFF;
