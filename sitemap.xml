@@ -2,12 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.yappstore.ai/</loc>
-         <lastmod>2024-05-12</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.yappstore.ai/developer_notes/</loc>
-         <lastmod>2024-05-12</lastmod>
+         <loc>https://docs.yappstore.ai/content/about/about/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/monetization/monetization/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/overview/api/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/overview/cross_platform/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/overview/getting_started/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/overview/monetization/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/overview/security/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/sdk/sdk/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/security/faq/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/security/security/</loc>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
