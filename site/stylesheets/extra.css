@@ -5,8 +5,8 @@
     /* Primary color shades */
     --md-primary-bg-color: #FFFFFF;
     --md-primary-bg-color--light: pink;
-    --md-text-link-color: magenta;
-    --md-typeset-a-color: #2f3644;
+    --md-text-link-color: pink;
+    --md-typeset-a-color: pink;
 
     --md-code-hl-color:                #FFFFFF;
     --md-code-hl-number-color:         hsla(6, 74%, 63%, 1);
@@ -29,9 +29,9 @@
     --md-primary-fg-color--light: #D9F6FA;
     --md-primary-fg-color--dark:  #2f3644;
     /* Primary color shades */
-    --md-primary-bg-color: #002677; /*Header*/
-    --md-primary-bg-color--light: #002677;
-    --md-text-link-color: #FF612B;
+    --md-primary-bg-color: pink; /*Header*/
+    --md-primary-bg-color--light: pink;
+    --md-text-link-color: pink;
     --md-typeset-a-color: magenta;
 
     --md-code-hl-color:                #FFFFFF;
@@ -40,7 +40,7 @@
     --md-code-hl-function-color:       hsla(291, 57%, 65%, 1);
     --md-code-hl-constant-color:       hsla(250, 62%, 70%, 1);
     --md-code-hl-keyword-color:        hsla(219, 66%, 64%, 1);
-    --md-code-hl-string-color:         hsla(150, 58%, 44%, 1);
+    --md-code-hl-string-color:         pink;
     --md-code-hl-name-color:           var(--md-code-fg-color);
     --md-code-hl-operator-color:       var(--md-default-fg-color--light);
     --md-code-hl-punctuation-color:    var(--md-default-fg-color--light);

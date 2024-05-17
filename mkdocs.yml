@@ -9,10 +9,6 @@ repo_url: "https://github.com/yappstore/docs"
 nav:
   - Documentation:
       - content/overview/getting_started.md
-      - content/overview/cross_platform.md
-      - content/overview/monetization.md
-      - content/overview/api.md
-      - content/overview/security.md
   - Monetization:
       - content/monetization/monetization.md
   - SDK:
@@ -90,16 +86,16 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: lime
+      accent: pink
       toggle:
-        icon: material/weather-night
+        icon: material/weather-sunny
         name: Switch to system preference
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: purple
+      primary: pink
+      accent: pink
       toggle:
-        icon: material/weather-sunny
+        icon: material/weather-night
         name: Switch to dark mode
   # icon:
   #   admonition:
@@ -137,8 +133,9 @@ markdown_extensions:
           case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
-  - toc:
-      permalink: "⛌"
+  - markdown.extensions.toc:
+        slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+        permalink: ""
 
 plugins:
   # - markdown-exec
