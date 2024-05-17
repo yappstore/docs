@@ -1,6 +1,6 @@
 @media screen {
 	[data-md-color-scheme=slate] {
-		--md-hue: 232;
+		--md-hue: 262;
 		--md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 1);
 		--md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
 		--md-default-fg-color--lighter: hsla(var(--md-hue), 75%, 90%, 0.32);
@@ -50,11 +50,11 @@
 	}
 
 	[data-md-color-scheme=slate][data-md-color-primary=pink] {
-		--md-typeset-a-color: #ed5487
+		--md-typeset-a-color: pink
 	}
 
 	[data-md-color-scheme=slate][data-md-color-primary=purple] {
-		--md-typeset-a-color: #bd78c9
+		--md-typeset-a-color: 
 	}
 
 	[data-md-color-scheme=slate][data-md-color-primary=deep-purple] {
@@ -102,8 +102,8 @@
 	--md-accent-bg-color--light: #ffffffb3
 }
 
-[data-md-color-accent=pink] {
-	--md-accent-fg-color: #f50056;
+[data-md-color-accent=pink] { /** Highlighting for hovering over links - Change in mkdocs.yml**/
+	--md-accent-fg-color: pink;
 	--md-accent-fg-color--transparent: #f500561a;
 	--md-accent-bg-color: #fff;
 	--md-accent-bg-color--light: #ffffffb3
@@ -216,9 +216,9 @@
 }
 
 [data-md-color-primary=pink] {
-	--md-primary-fg-color: #e92063;
-	--md-primary-fg-color--light: #ec417a;
-	--md-primary-fg-color--dark: #c3185d;
+	--md-primary-fg-color: pink;
+	--md-primary-fg-color--light: pink;
+	--md-primary-fg-color--dark: pink;
 	--md-primary-bg-color: #fff;
 	--md-primary-bg-color--light: #ffffffb3
 }
@@ -296,9 +296,9 @@
 }
 
 [data-md-color-primary=lime] {
-	--md-primary-fg-color: #cbdc38;
-	--md-primary-fg-color--light: #d3e156;
-	--md-primary-fg-color--dark: #b0b52c;
+	--md-primary-fg-color: pink;
+	--md-primary-fg-color--light: pink;
+	--md-primary-fg-color--dark: pink;
 	--md-primary-bg-color: #000000de;
 	--md-primary-bg-color--light: #0000008a
 }
