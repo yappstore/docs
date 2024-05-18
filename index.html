@@ -53,34 +53,34 @@
 
    <script>"Apple Computer, Inc." === navigator.vendor && document.documentElement.classList.add("safari")</script>
    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const slider = document.getElementById('subscribers-slider');
-    const priceInput = document.getElementById('price-input');
-    const earningsDisplay = document.getElementById('earnings');
-    const subscribersDisplay = document.getElementById('subscribers');
+      document.addEventListener('DOMContentLoaded', function () {
+         const slider = document.getElementById('subscribers-slider');
+         const priceInput = document.getElementById('price-input');
+         const earningsDisplay = document.getElementById('earnings');
+         const subscribersDisplay = document.getElementById('subscribers');
 
-    function calculateEarnings() {
-        const subscribers = slider.value;
-        const price = parseFloat(priceInput.value);
-        const platformFee = 0.08; // Updated to 8%
-        const processingFee = 0.03; // Assuming a 3% processing fee, can be adjusted
-        const netPrice = price * (1 - platformFee - processingFee);
-        const earnings = netPrice * subscribers;
+         function calculateEarnings() {
+            const subscribers = slider.value;
+            const price = parseFloat(priceInput.value);
+            const platformFee = 0.08; // Updated to 8%
+            const processingFee = 0.03; // Assuming a 3% processing fee, can be adjusted
+            const netPrice = price * (1 - platformFee - processingFee);
+            const earnings = netPrice * subscribers;
 
-        earningsDisplay.textContent = `$${earnings.toFixed(2)} / month`;
-        subscribersDisplay.textContent = `with ${subscribers} subscribers`;
+            earningsDisplay.textContent = `$${earnings.toFixed(2)} / month`;
+            subscribersDisplay.textContent = `with ${subscribers} subscribers`;
 
-        // Update slider background
-        const percentage = (subscribers - slider.min) / (slider.max - slider.min) * 100;
-        slider.style.background = `linear-gradient(to right, black ${percentage}%, #ddd ${percentage}%)`;
-    }
+            // Update slider background
+            const percentage = (subscribers - slider.min) / (slider.max - slider.min) * 100;
+            slider.style.background = `linear-gradient(to right, black ${percentage}%, #ddd ${percentage}%)`;
+         }
 
-    slider.addEventListener('input', calculateEarnings);
-    priceInput.addEventListener('input', calculateEarnings);
+         slider.addEventListener('input', calculateEarnings);
+         priceInput.addEventListener('input', calculateEarnings);
 
-    // Initial calculation
-    calculateEarnings();
-});
+         // Initial calculation
+         calculateEarnings();
+      });
 
 
    </script>
@@ -554,6 +554,8 @@ document.addEventListener('DOMContentLoaded', function() {
                   <div class="price-container">
                      <span>at a price of $</span>
                      <input style="background-color:#fff0f9" type="number" step="5" value="4.99" id="price-input">
+
+                     <span>a month</span>
                   </div>
                   <div class="note"><i>The Yapp Store only charges an 8% platform fee + processing fees</i></div>
                </div>
@@ -585,10 +587,11 @@ document.addEventListener('DOMContentLoaded', function() {
                                 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
                               </svg> Sign in with Github </h2>
                            <p> Go to <strong><a href="https://developer.yappstore.ai"
-                                    target="_blank">developer.yappstore.ai</strong></a> and sign in using Github OAuth
+                                    target="_blank">developer.yappstore.ai</strong></a> and sign in using Github
                               to create a developer account
                            </p>
-                           <p>hahahaah</p>
+                           <p>The developer portal allows you to submit apps to the marketplace and view analytics &
+                              insights into your published apps. </p>
                            <p> <a href="" aria-label="Built-in search"> <span class="twemoji"> <svg
                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                        <path
@@ -602,17 +605,16 @@ document.addEventListener('DOMContentLoaded', function() {
                               height="327"> </a>
                         <figcaption class="md-typeset">
                            <h2>Sync Your Github Repository</h2>
-                           <p> Some examples need more explanation than others, which is why Material for MkDocs offers
-                              a <strong>unique and elegant</strong> way to add <strong>rich text</strong> almost
-                              <strong>anywhere in a code block</strong>.
+                           <p>For Yapp store to publish your application to the marketplace, you simply sync your
+                              repository within the app submission form.
+                              You can convieniently configure your application requirements within the portal and the
+                              yapp store backend will take care of the rest.
                            </p>
-                           <p> Code annotations can host formatted <strong>text</strong>, <strong>images</strong>,
-                              <strong>diagrams</strong>, <strong>code blocks</strong>, call-outs, content tabs, even
-                              interactive elements – basically everything that can be expressed in Markdown or HTML. Of
-                              course, code annotations <strong>work beautifully on mobile</strong> and other touch
-                              devices <strong> and can be printed</strong>.
+                           <p>
+                              From Python tools to web applications, we support a bunch of different paradigms out of
+                              the box - Our goal is to provide developers a marketplace regardless of the use case.
                            </p>
-                           <p> <a href="reference/code-blocks/#code-annotations" aria-label="Code annotations"> <span
+                           <p> <a href="/docs/content/" aria-label="Code annotations"> <span
                                     class="twemoji"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                        <path
                                           d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
@@ -625,8 +627,9 @@ document.addEventListener('DOMContentLoaded', function() {
                               width="500" height="327"> </a>
                         <figcaption class="md-typeset">
                            <h2>Review</h2>
-                           <p></p> 
-                                 <a href="/" aria-label="Social cards"> <span class="twemoji">
+                           <p>Apps run within a sandbox environment by default, so in most cases applications can be auto-reviewed and published to the public marketplace.
+                           </p>
+                           <a href="content/security/security/" aria-label="Social cards"> <span class="twemoji">
                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path
                                        d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
@@ -640,10 +643,13 @@ document.addEventListener('DOMContentLoaded', function() {
                               alt="10,000+ icons and emojis" loading="lazy" width="500" height="327"> </a>
                         <figcaption class="md-typeset">
                            <h2> Publish! </h2>
-                           <p> After you application has gone through review, it is published to the application marketplace on <strong><a href="https://yappstore.ai">yappstore.ai</a></strong> </p> 
-                           <a href="reference/icons-emojis/#search"
-                              aria-label="10,000+ icons and emojis"> <span class="twemoji"> <svg
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                           <p> After you application has gone through review, it is published to the application
+                              marketplace on <strong><a href="https://yappstore.ai">yappstore.ai</a></strong> 
+                           
+                              We look forward to see what you make!
+                           </p>
+                           <a href="/docs/" aria-label="10,000+ icons and emojis"> <span
+                                 class="twemoji"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path
                                        d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
                                     </path>

@@ -2,37 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.yappstore.ai/</loc>
-         <lastmod>2024-05-17</lastmod>
+         <lastmod>2024-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/about/about/</loc>
-         <lastmod>2024-05-17</lastmod>
+         <lastmod>2024-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/contact/contact/</loc>
+         <lastmod>2024-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/monetization/monetization/</loc>
-         <lastmod>2024-05-17</lastmod>
+         <lastmod>2024-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/overview/getting_started/</loc>
-         <lastmod>2024-05-17</lastmod>
+         <lastmod>2024-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/sdk/sdk/</loc>
-         <lastmod>2024-05-17</lastmod>
+         <lastmod>2024-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/security/faq/</loc>
-         <lastmod>2024-05-17</lastmod>
+         <lastmod>2024-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/security/review/</loc>
+         <lastmod>2024-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/security/security/</loc>
-         <lastmod>2024-05-17</lastmod>
+         <lastmod>2024-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
