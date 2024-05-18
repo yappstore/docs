@@ -9,18 +9,18 @@ repo_url: "https://github.com/yappstore/docs"
 nav:
   - Documentation:
       - content/overview/getting_started.md
+  - SDK:
+      - content/sdk/sdk.md
   - Monetization:
       - content/monetization/monetization.md
-  - SDK:
-      - content/SDK/sdk.md
   - Security:
       - content/security/security.md
+      - content/security/review.md
       - content/security/faq/faq.md
   - About:
     - content/about/about.md
   - Contact Us:
     - content/contact/contact.md
-
 
     # - Operations:
     #   - Github:
@@ -136,6 +136,11 @@ markdown_extensions:
   - markdown.extensions.toc:
         slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
         permalink: ""
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
 
 plugins:
   # - markdown-exec

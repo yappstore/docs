@@ -55,8 +55,6 @@
   color: #5b2df1;
 }
 
-
-
 @keyframes teams {
   0%, 40%, 80%, 100% {
     transform: scale(1);
