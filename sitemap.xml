@@ -2,47 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.yappstore.ai/</loc>
-         <lastmod>2024-05-18</lastmod>
+         <lastmod>2024-05-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/about/about/</loc>
-         <lastmod>2024-05-18</lastmod>
+         <lastmod>2024-05-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/contact/contact/</loc>
-         <lastmod>2024-05-18</lastmod>
+         <lastmod>2024-05-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/monetization/monetization/</loc>
-         <lastmod>2024-05-18</lastmod>
+         <lastmod>2024-05-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/monetization/onetime/onetime/</loc>
+         <lastmod>2024-05-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/monetization/subscriptions/subscription/</loc>
+         <lastmod>2024-05-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/overview/getting_started/</loc>
-         <lastmod>2024-05-18</lastmod>
+         <lastmod>2024-05-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/overview/guides/submission/</loc>
+         <lastmod>2024-05-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/overview/guides/updater/</loc>
+         <lastmod>2024-05-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/sdk/sdk/</loc>
-         <lastmod>2024-05-18</lastmod>
+         <lastmod>2024-05-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/sdk/native_api/filesystem/</loc>
+         <lastmod>2024-05-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/sdk/native_api/shell/</loc>
+         <lastmod>2024-05-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.yappstore.ai/content/sdk/native_api/storage/</loc>
+         <lastmod>2024-05-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/security/faq/</loc>
-         <lastmod>2024-05-18</lastmod>
+         <lastmod>2024-05-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/security/review/</loc>
-         <lastmod>2024-05-18</lastmod>
+         <lastmod>2024-05-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.yappstore.ai/content/security/security/</loc>
-         <lastmod>2024-05-18</lastmod>
+         <lastmod>2024-05-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
