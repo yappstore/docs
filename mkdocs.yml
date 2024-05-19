@@ -9,23 +9,26 @@ repo_url: "https://github.com/yappstore/docs"
 nav:
   - Documentation:
       - content/overview/getting_started.md
+      - Guides:
+        - content/overview/guides/submission.md
+        - content/overview/guides/updater.md
   - SDK:
       - content/sdk/sdk.md
+      - Native API:
+        - content/sdk/native_api/filesystem.md
+        - content/sdk/native_api/shell.md
   - Monetization:
       - content/monetization/monetization.md
+      - content/monetization/subscriptions/subscription.md
+      - content/monetization/onetime/onetime.md
   - Security:
       - content/security/security.md
       - content/security/review.md
-      - content/security/faq/faq.md
+      - content/security/faq.md
   - About:
     - content/about/about.md
   - Contact Us:
     - content/contact/contact.md
-
-    # - Operations:
-    #   - Github:
-    #     - Git Introduction: developer_notes/operations/git/git_intro.md
-    #     - Actions: developer_notes/operations/git/git_actions.md
 
 ############################################################################################
 
@@ -58,31 +61,17 @@ theme:
     - content.tooltips
     - navigation.footer
     - navigation.indexes
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.tracking
+    # - navigation.instant
     - search.highlight
     - search.suggest
     - toc.follow
-    - navigation.instant
-    - navigation.tracking
-  # palette:
-  #   - media: "(prefers-color-scheme: dark)"
-  #     scheme: default
-  #     toggle:
-  #       icon: material/toggle-switch-off-outline
-  #       name: Switch to dark mode
-  #   - media: "(prefers-color-scheme: dark)"
-  #     scheme: slate
-  #     toggle:
-  #       icon: material/toggle-switch
-  #       name: Switch to light mode
+
   palette:
-    # - media: "(prefers-color-scheme)"
-    #   toggle:
-    #     icon: material/brightness-auto
-    #     name: Switch to light mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
@@ -105,9 +94,9 @@ markdown_extensions:
   - admonition
   - def_list
   - attr_list
-  # - callouts
+  - callouts
   - footnotes
-  - md_in_html
+  # - md_in_html
   - meta
   - pymdownx.inlinehilite
   - pymdownx.highlight
