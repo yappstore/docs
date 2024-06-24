@@ -230,6 +230,7 @@ h1 {
 	overflow-y: auto;
 	overscroll-behavior-y: none;
 	perspective: var(--md-parallax-perspective);
+	-webkit-perspective: var(--md-parallax-perspective);
 	scroll-behavior: smooth;
 	width: 100vw
 }
@@ -239,6 +240,7 @@ h1 {
 	color: var(--md-typeset-color);
 	display: block;
 	position: relative;
+	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d
 }
 
@@ -303,11 +305,19 @@ h1 {
 	pointer-events: none;
 	position: absolute;
 	top: 0;
+	-webkit-transform: translateZ(calc(var(--md-parallax-perspective) * var(--md-parallax-depth) * -1)) scale(calc(var(--md-parallax-depth) + 1));
 	transform: translateZ(calc(var(--md-parallax-perspective)*var(--md-parallax-depth)*-1)) scale(calc(var(--md-parallax-depth) + 1));
 	transform-origin: 50vw 50vh;
+	-webkit-transform-origin: 50vw 50vh;
 	width: 100vw;
-	z-index: calc(10 - var(--md-parallax-depth, 0))
+	z-index: calc(10 - var(--md-parallax-depth, 0));
+
+	transform: translateZ(calc(var(--md-parallax-perspective) * -2)) scale(3);
+    -webkit-transform: translateZ(calc(var(--md-parallax-perspective) * -2)) scale(3);
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
 }
+
 
 .mdx-parallax__image {
 	display: block;
