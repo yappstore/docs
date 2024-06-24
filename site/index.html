@@ -99,7 +99,6 @@
          --md-text-font: "Roboto";
          --md-code-font: "Roboto Mono";
       }
-
    </style>
 
    <!-- <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script><script id=__analytics>;function __md_analytics(){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-73586301-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");ga("send","event","feedback","click",t,e),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){ga("send","pageview",e.pathname)})});var e=document.createElement("script");e.async=!0,e.src="https://www.google-analytics.com/analytics.js",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script><script>"undefined"!=typeof __md_analytics&&__md_analytics()</script> -->
@@ -593,32 +592,34 @@
             <!-- <h1 style="align-items: center;">You could be earning...</h1> -->
 
             <div class="md-content md-grid" data-md-component="content">
+               <div class="md-content__inner">
 
-               <!-- INTERACTIVE SLIDER TODO: UPDATE THIS -->
-               <div class="container">
+                  <!-- INTERACTIVE SLIDER TODO: UPDATE THIS -->
+                  <div class="container">
 
-                  <header class="md-typeset">
+                     <header class="md-typeset">
 
-                     <h1 id="more-than-just-a-static-site">Subscribers<a href="#more-than-just-a-static-site"
-                           class="headerlink" title="Permanent link"> ¶ </a> </h1>
-                  </header>
-                  <div class="earnings-box">
-                     <div id="earnings">$0.00 / month</div>
-                     <div id="subscribers">with 0 subscribers</div>
-                     <div id="subscribers">After all fees*</div>
+                        <h1 id="more-than-just-a-static-site">Subscribers<a href="#more-than-just-a-static-site"
+                              class="headerlink" title="Permanent link"> ¶ </a> </h1>
+                     </header>
+                     <div class="earnings-box">
+                        <div id="earnings">$0.00 / month</div>
+                        <div id="subscribers">with 0 subscribers</div>
+                        <div id="subscribers">After all fees*</div>
+                     </div>
+                     <div class="slider-container">
+                        <input type="range" min="0" max="1000" value="500" id="subscribers-slider">
+                     </div>
+                     <div class="price-container">
+                        <span>at a price of $</span>
+                        <input style="background-color:#fff0f9" type="number" step="5" value="4.99" id="price-input">
+
+                        <span>a month</span>
+                     </div>
+                     <div class="note"><i>The Yapp Store only charges an 9% platform fee + processing fees</i></div>
+                     <div class="note"><i>Note: this is just an estimate - we will update when monetization is rolled
+                           out</i></div>
                   </div>
-                  <div class="slider-container">
-                     <input type="range" min="0" max="1000" value="500" id="subscribers-slider">
-                  </div>
-                  <div class="price-container">
-                     <span>at a price of $</span>
-                     <input style="background-color:#fff0f9" type="number" step="5" value="4.99" id="price-input">
-
-                     <span>a month</span>
-                  </div>
-                  <div class="note"><i>The Yapp Store only charges an 9% platform fee + processing fees</i></div>
-                  <div class="note"><i>Note: this is just an estimate - we will update when monetization is rolled
-                        out</i></div>
                </div>
             </div>
          </section>
