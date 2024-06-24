@@ -72,13 +72,13 @@ theme:
     - toc.follow
 
   palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: pink
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to system preference
+    # - media: "(prefers-color-scheme: dark)"
+    #   scheme: slate
+    #   primary: black
+    #   accent: pink
+    #   toggle:
+    #     icon: material/weather-sunny
+    #     name: Switch to system preference
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: pink
