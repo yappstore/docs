@@ -124,10 +124,11 @@
 }
 
 [data-md-color-accent=indigo] {
-	--md-accent-fg-color: #F85FFC; /**Main Page Button Hover**/
+	--md-accent-fg-color: rgb(220,47,137); /**Main Page Button Hover**/	
 	--md-accent-fg-color--transparent: #526cfe1a;
 	--md-accent-bg-color: #fff;
-	--md-accent-bg-color--light: #ffffffb3
+	--md-accent-bg-color--light: #ffffffb3;
+	opacity: 1.0;
 }
 
 [data-md-color-accent=blue] {
