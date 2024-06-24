@@ -67,7 +67,6 @@ h1 {
 
 #subscribers-slider {
 	width: 100%;
-	margin-top: 2%;
 	-webkit-appearance: none;
 	appearance: none;
 	height: 8px;
@@ -112,7 +111,7 @@ h1 {
 	/* border: 2px solid #000;
 	border-radius: 2px;
 	padding: 0; */
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 }
 
 
@@ -199,7 +198,8 @@ h1 {
 }
 
 .md-typeset .md-button {
-	background-color: #F356E2;
+	/* background-color: #F356E2; */
+	background-color: rgb(245, 70, 160);
 	border-width: 0;
 	color: var(--md-primary-bg-color);
 	margin-right: .5rem;

@@ -5,7 +5,9 @@
     /* Primary color shades */
     --md-primary-bg-color: #FFFFFF;
     --md-primary-bg-color--light: pink;
-    --md-text-link-color: magenta;
+    /* --md-text-link-color: magenta; */
+    --md-text-link-color:    rgb(220,47,137);
+
     --md-typeset-a-color: #2f3644;
 
     --md-code-hl-color:                #FFFFFF;
@@ -33,6 +35,8 @@
     --md-primary-bg-color: pink; /*Header title*/
     --md-primary-bg-color--light: pink; /*search placeholder*/
     --md-text-link-color: magenta;
+    --md-text-link-color:    rgb(220,47,137);
+
     --md-typeset-a-color: red;
 
     --md-code-hl-color:                #FFFFFF;
