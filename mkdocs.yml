@@ -12,6 +12,7 @@ nav:
       - Guides:
         - content/overview/guides/submission.md
         - content/overview/guides/updater.md
+      - content/overview/roadmap.md
   - SDK:
       - content/sdk/sdk.md
       - Native API:
@@ -27,6 +28,9 @@ nav:
       - content/security/faq.md
   - About:
     - content/about/about.md
+    - Boring Disclaimer Stuff:
+      - content/about/tc.md
+      - content/about/safety_agreement.md
   - Contact Us:
     - content/contact/contact.md
 
