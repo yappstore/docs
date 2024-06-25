@@ -407,8 +407,6 @@
         
           
         
-          
-        
       
       
         <label class="md-nav__link" for="__nav_1_2">
@@ -505,8 +503,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#submit-for-review" class="md-nav__link">
-    Submit for Review
+  <a href="#7-submit-for-review" class="md-nav__link">
+    7. Submit for Review
   </a>
   
 </li>
@@ -515,20 +513,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../updater/" class="md-nav__link">
-        How To Update Your App
-      </a>
     </li>
   
 
@@ -1092,8 +1076,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#submit-for-review" class="md-nav__link">
-    Submit for Review
+  <a href="#7-submit-for-review" class="md-nav__link">
+    7. Submit for Review
   </a>
   
 </li>
@@ -1121,28 +1105,34 @@
 <summary>NOTE</summary>
 <p>This documentation site is still under construction, so some details may not be included on this page.</p>
 </details>
-<p>Submitting your application to yappstore.ai is a straightforward process. Follow these steps to get your application reviewed and published on our platform.</p>
+<p>Submitting your application to yappstore.ai is a straightforward process. Follow these steps to get your application reviewed and published on our platform. Firstly, go to <a href="https://developer.yappstore.ai"><strong>https://developer.yappstore.ai</strong></a> and login with your github account</p>
+<hr>
 <h2 id="1-syncing-your-github-repository">1. Syncing your GitHub Repository<a class="headerlink" href="#1-syncing-your-github-repository" title="Permanent link"></a></h2>
+<p><img src="../../../../resources/images/step1.png" style="width: 1000px;"></p>
 <p>To bundle your project into an executable application, you must first provide access to the Yapp GitHub App.</p>
 <ol>
 <li>
 <p><strong>Install the Yapp GitHub App:</strong></p>
 <ul>
-<li>Ensure that the Yapp GitHub App is installed in your GitHub account.</li>
-<li>Grant the necessary permissions for the Yapp GitHub App to access your repository.</li>
+<li>Ensure that the Yapp GitHub App is installed in your GitHub account. You can find it <a href="https://github.com/apps/yappstore-oauth"><strong>here</strong></a></li>
+<li>Grant the necessary permissions for the Yapp GitHub App to access your repository. Click <a href="https://github.com/settings/installations/"><strong>here</strong></a> to configure the permissions</li>
 </ul>
 </li>
 <li>
 <p><strong>Sync Your Repository:</strong></p>
 <ul>
-<li>In the App Submission form, click on the "Sync GitHub Repository" button.</li>
+<li>In the App Submission form, click on the "<strong>Sync GitHub Repository</strong>" button.</li>
 <li>Select the repository you wish to sync. If you can't see your repository, ensure the GitHub App is installed and has access.</li>
 </ul>
 </li>
 </ol>
-<p>For more detailed instructions, visit the <a href="#">GitHub App installation guide</a>.</p>
+<details class="- question">
+<summary>"I Can't Find the Repository I Want"</summary>
+<p>If you've just granted access, sometimes Github takes a few minutes to sync the changes - wait 5 minutes and come back.</p>
+</details>
 <hr>
 <h2 id="2-general-information">2. General Information<a class="headerlink" href="#2-general-information" title="Permanent link"></a></h2>
+<p><img src="../../../../resources/images/step2.png" style="width: 1000px;"></p>
 <p>Provide the general information about your project. This includes:</p>
 <ul>
 <li><strong>Application Name</strong>: The name of your application.</li>
@@ -1155,7 +1145,12 @@
 </ul>
 <hr>
 <h2 id="3-build-information">3. Build Information<a class="headerlink" href="#3-build-information" title="Permanent link"></a></h2>
-<p>Specify the build information for your project. This helps the YappStore backend to correctly build and bundle your application.</p>
+<p>Specify the build information for your project. This helps the YappStore backend to correctly build and bundle your application. There are two applications paradigms in scope for yappstore: UI based applications (Web Applications) and Daemons (background processes that do not need a UI component)</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="web-applications" name="__tabbed_1" type="radio"><input id="daemons" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="web-applications">Web Applications</label><label for="daemons">Daemons</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img src="../../../../resources/images/step3a1.png" style="width: 800px;">
+<!-- <img src="../../../../resources/images/step3a2.png" style="width: 800px;"> --></p>
 <ul>
 <li><strong>Project Type</strong>: Select 'Web Application'.</li>
 <li><strong>Frontend Framework</strong>: Choose the framework your application uses (e.g., React, Vue, Angular).</li>
@@ -1166,11 +1161,34 @@
 <li><strong>Window Title</strong>: The title for your application window.</li>
 <li><strong>Full Screen</strong>: Toggle on if you want your app to open in full screen on startup.</li>
 <li><strong>Resizable</strong>: Toggle on if you want to allow users to resize the application window.</li>
+</ul>
+<p><img src="../../../../resources/svg/js.svg" style="width: 70px;">
+<img src="../../../../resources/svg/ts.svg" style="width: 70px;">
+<img src="../../../../resources/svg/vue.svg" style="width: 70px;">
+<img src="../../../../resources/svg/react.svg" style="width: 70px;">
+<img src="../../../../resources/svg/svelte.svg" style="width: 70px;">
+<img src="../../../../resources/svg/angular.svg" style="width: 70px;">
+<img src="../../../../resources/svg/vite.svg" style="width: 70px;">
+<img src="../../../../resources/svg/webpack.svg" style="width: 70px;">
+<img src="../../../../resources/svg/qwik.svg" style="width: 70px;"></p>
+</div>
+<div class="tabbed-block">
+<p><img src="../../../../resources/images/step3b.png" style="width: 800px;"></p>
+<details class="question" open="open">
+<summary>NOTE</summary>
+<p>This is still in developerment - check back here later.</p>
+</details>
+</div>
+</div>
+</div>
+<p><strong>Bundle Specific Configurations</strong></p>
+<ul>
 <li><strong>Target Operating Systems</strong>: Select the operating systems you want your app to be available on (MacOS, Windows, Linux).</li>
 <li><strong>Application Icon</strong>: Upload an icon for your application.</li>
 </ul>
 <hr>
 <h2 id="4-permissions">4. Permissions<a class="headerlink" href="#4-permissions" title="Permanent link"></a></h2>
+<p><img src="../../../../resources/images/step4.png" style="width: 800px;"></p>
 <p>Permissions enable certain functionalities for your application. These will be reviewed, and you need to justify their necessity.</p>
 <ul>
 <li><strong>Filesystem Access</strong>: Allows your application to read and write to an isolated location within the filesystem using the SDK.</li>
@@ -1180,19 +1198,21 @@
 <p>Note: For security reasons, the more permissions you request, the longer the approval process may take. The Yapp Native SDK is still under development, so these options are currently disabled.</p>
 <hr>
 <h2 id="5-monetization">5. Monetization<a class="headerlink" href="#5-monetization" title="Permanent link"></a></h2>
+<p><img src="../../../../resources/images/step5.png" style="width: 800px;"></p>
 <p>Monetization features will be available in future releases. Currently, all applications are released for free.</p>
 <ul>
 <li><strong>Monetization Toggle</strong>: Leave this turned off to release your application for free.</li>
 </ul>
 <hr>
 <h2 id="6-agreements">6. Agreements<a class="headerlink" href="#6-agreements" title="Permanent link"></a></h2>
+<p><img src="../../../../resources/images/step6.png" style="width: 800px;"></p>
 <p>Before submitting your application, you must agree to the following:</p>
 <ul>
 <li><strong>Terms and Conditions</strong>: Confirm that you have read and agree to the <a href="#">Terms and Conditions</a>.</li>
 <li><strong>Safety and Security</strong>: Confirm that you have taken the necessary steps to ensure your application is safe and secure for both developers and users.</li>
 </ul>
 <hr>
-<h2 id="submit-for-review">Submit for Review<a class="headerlink" href="#submit-for-review" title="Permanent link"></a></h2>
+<h2 id="7-submit-for-review">7. Submit for Review<a class="headerlink" href="#7-submit-for-review" title="Permanent link"></a></h2>
 <p>Once all the required information is filled out, click on "Submit for Review". We appreciate your feedback on the developer experience, so please leave us any comments or suggestions.</p>
 <details class="danger" open="open">
 <summary>NOTE</summary>
@@ -1235,13 +1255,13 @@ Additionally, we are figuring out licensing and other security aspects for safe 
       
       
         
-        <a href="../updater/" class="md-footer__link md-footer__link--next" aria-label="Next: How To Update Your App" rel="next">
+        <a href="../../roadmap/" class="md-footer__link md-footer__link--next" aria-label="Next: Roadmap" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              How To Update Your App
+              Roadmap
             </div>
           </div>
           <div class="md-footer__button md-icon">

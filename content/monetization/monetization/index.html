@@ -403,8 +403,6 @@
         
           
         
-          
-        
       
       
         <label class="md-nav__link" for="__nav_1_2">
@@ -427,20 +425,6 @@
     <li class="md-nav__item">
       <a href="../../overview/guides/submission/" class="md-nav__link">
         How To Submit an Application
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../overview/guides/updater/" class="md-nav__link">
-        How To Update Your App
       </a>
     </li>
   
@@ -682,13 +666,6 @@
         <li class="md-nav__item">
   <a href="#pricing-structure" class="md-nav__link">
     Pricing Structure
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tiered-commission-rates" class="md-nav__link">
-    Tiered Commission Rates:
   </a>
   
 </li>
@@ -1033,13 +1010,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#tiered-commission-rates" class="md-nav__link">
-    Tiered Commission Rates:
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1064,10 +1034,17 @@
 <p>This documentation site is still under constructions, so some details may not be included to this page.</p>
 </details>
 <h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"></a></h3>
-<p>This document outlines the monetization model for our online marketplace platform, detailing the pricing structure, fees, and the rationale behind our approach. Our platform is designed to provide a space where developers can publish and sell their applications, as well as offer free applications, which incur no costs. Below, we provide a comprehensive breakdown of our pricing model, which is crafted to ensure sustainability and profitability for both the platform and the developers.</p>
+<p>This document outlines the monetization model for our online marketplace platform, detailing the pricing structure, fees, and the rationale behind our approach. Our platform is designed to provide a space where developers can publish and sell their applications, as well as offer free applications, which incur no costs. Below, we provide breakdown of our pricing model, which is a work in progress - we aim to facilitate profitability for both the platform and the developers.</p>
 <h3 id="pricing-structure">Pricing Structure<a class="headerlink" href="#pricing-structure" title="Permanent link"></a></h3>
 <p>Our platform operates on a commission-based model, where we take a percentage of each sale as a platform fee. This fee is variable and depends on the pricing of the application set by the developer.</p>
-<h3 id="tiered-commission-rates">Tiered Commission Rates:<a class="headerlink" href="#tiered-commission-rates" title="Permanent link"></a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="once-off-purchases" name="__tabbed_1" type="radio"><input id="subscription-model" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="once-off-purchases">Once-off Purchases</label><label for="subscription-model">Subscription Model</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<details class="question" open="open">
+<summary>NOTE</summary>
+<p>This section covers the scenario when a developer may sell their app as a once off purchase 
+These figures only take US commission fees into account, and may not reflect the real values in your region.</p>
+</details>
 <ul>
 <li>For applications priced at €3.50 or higher, we charge a modest 8% commission fee.</li>
 <li>For applications priced below €3.50, we charge a 30% commission fee.</li>
@@ -1077,10 +1054,10 @@
 <thead>
 <tr>
 <th>TRANSACTION STEPS</th>
-<th>Example 1</th>
-<th>Example 2</th>
-<th>Example 3</th>
-<th>Example 4</th>
+<th>EXAMPLE 1</th>
+<th>EXAMPLE 2</th>
+<th>EXAMPLE 3</th>
+<th>EXAMPLE 4</th>
 </tr>
 </thead>
 <tbody>
@@ -1113,11 +1090,11 @@
 <td>$ 0.31</td>
 </tr>
 <tr>
-<td>---</td>
-<td>---</td>
-<td>---</td>
-<td>---</td>
-<td>---</td>
+<td><strong>---</strong></td>
+<td><strong>---</strong></td>
+<td><strong>---</strong></td>
+<td><strong>---</strong></td>
+<td><strong>---</strong></td>
 </tr>
 <tr>
 <td>Balance</td>
@@ -1129,7 +1106,7 @@
 <tr>
 <td>Platform commission %</td>
 <td>5%</td>
-<td>8%</td>
+<td><b style="color: red">8%</b></td>
 <td>10%</td>
 <td>30%</td>
 </tr>
@@ -1162,11 +1139,11 @@
 <td>$ 0.25</td>
 </tr>
 <tr>
-<td>---</td>
-<td>---</td>
-<td>---</td>
-<td>---</td>
-<td>---</td>
+<td><strong>---</strong></td>
+<td><strong>---</strong></td>
+<td><strong>---</strong></td>
+<td><strong>---</strong></td>
+<td><strong>---</strong></td>
 </tr>
 <tr>
 <td>Stripe Takes from Platform (Payout Total)</td>
@@ -1212,7 +1189,16 @@
 </tr>
 </tbody>
 </table>
-<p>The tiered commission structure is informed by the fixed and variable costs imposed by Stripe for payment processing. By setting a higher commission rate for lower-priced apps, we mitigate the relative impact of Stripe's fees, which are more significant for lower transaction amounts. Conversely, the lower commission rate for higher-priced apps provides developers with a greater share of the revenue, incentivizing them to set prices that reflect the value of their applications.</p></div>
+<p>The tiered commission structure is informed by the fixed and variable costs imposed by Stripe for payment processing. By setting a higher commission rate for lower-priced apps, we mitigate the relative impact of Stripe's fees, which are more significant for lower transaction amounts. Conversely, the lower commission rate for higher-priced apps provides developers with a greater share of the revenue, incentivizing them to set prices that reflect the value of their applications.</p>
+</div>
+<div class="tabbed-block">
+<details class="danger" open="open">
+<summary>NOTE</summary>
+<p>This documentation site is still under constructions, so some details may not be included to this page.</p>
+</details>
+</div>
+</div>
+</div></div>
 
               
             </article>
