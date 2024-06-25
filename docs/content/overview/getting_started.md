@@ -1,14 +1,13 @@
 # Getting Started
 
 
-<img src="../../../resources/images/dark_logo_pink_background.png" style="width: 500px; display: block; margin-right: auto; margin-left: auto;">
+<!-- <img src="../../../resources/images/dark_logo_pink_background.png" style="width: 500px;"> -->
 
 ???+ Example "NOTE"    
     This documentation site is still under construction, so some details may not be included on this page.
 
 
 yappstore.ai is a cross-platform marketplace for desktop applications, designed to support developers in building, distributing, and monetizing their software. Currently, we are in the MVP (Minimum Viable Product) stage, and certain features are still being developed and refined. The original intent of this platform was for AI applications. However, the utility spans beyond AI usecases. If we can bundle it, you can publish it.
-
 
 ---
 
@@ -39,6 +38,9 @@ Security is a top priority at yappstore.ai. We ensure that all applications are 
     For MVP, the core focus to test developer experience with the platform, so not all security measures are currently in place.
 
 
+---
+
+
 ## Pros of Using yappstore.ai
 - **Free to Use**: Publishing applications is free, minimizing your costs and lowering the barrier to entry for your potential customers. No need to buy domain name, or pay for hosting. Once you app is built, it can be distributed as needed.
 - **Developer Focused**: Build your application how you want it to look without being confined to a specific UI format. yappstore.ai supports various frameworks and tooling to give you the freedom to innovate.
@@ -56,3 +58,6 @@ See out [App Submission Tutorial]() for more information.
 
 We look forward to seeing what you create with yappstore.ai!
 For more detailed guides and updates, keep an eye on this documentation site.
+
+
+

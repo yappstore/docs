@@ -11,7 +11,7 @@ nav:
       - content/overview/getting_started.md
       - Guides:
         - content/overview/guides/submission.md
-        - content/overview/guides/updater.md
+        # - content/overview/guides/updater.md
       - content/overview/roadmap.md
   - SDK:
       - content/sdk/sdk.md
