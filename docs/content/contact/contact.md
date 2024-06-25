@@ -1,7 +1,7 @@
 # Contact Us
 
 ???+ warning "NOTE"  
- This documentation site is still under construction, so some details may not be included on this page.
+    This documentation site is still under construction, so some details may not be included on this page.
 
 We are here to help you with any questions or issues you might have regarding yappstore.ai. Please feel free to reach out to us through the following channels:
 
