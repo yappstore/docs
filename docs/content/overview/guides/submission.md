@@ -135,7 +135,7 @@ Once all the required information is filled out, click on "Submit for Review". W
 
 ???+ danger "NOTE"    
     By taking part in the MVP, you are agreeing that your application will be freely usable by other testers and users. Do **not** distribute something you would currently like to monetize, as we just not there yet.
-    Additionally, we are figuring out licensing and other security aspects for safe and secure distribution. So bear with us. 
+    Additionally, bear with us while we figure out some security aspects of distribution. For more informaiton on security see [here]. 
 
 
 
