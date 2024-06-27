@@ -17,7 +17,7 @@
     
     
       
-        <title>Overview - The Yapp Store | Developer Documentation</title>
+        <title>Security Overview - The Yapp Store | Developer Documentation</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#security-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Security Overview
             
           </span>
         </div>
@@ -716,9 +716,89 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Security Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Overview
+        Security Overview
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    Environment Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-coding-practices" class="md-nav__link">
+    Secure Coding Practices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-protection" class="md-nav__link">
+    Data Protection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-permissions" class="md-nav__link">
+    Application Permissions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-deployment" class="md-nav__link">
+    Secure Deployment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inter-process-communication-ipc" class="md-nav__link">
+    Inter-Process Communication (IPC)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-security-policy-csp" class="md-nav__link">
+    Content Security Policy (CSP)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-developer-actions" class="md-nav__link">
+    Additional Developer Actions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -952,6 +1032,70 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    Environment Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-coding-practices" class="md-nav__link">
+    Secure Coding Practices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-protection" class="md-nav__link">
+    Data Protection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-permissions" class="md-nav__link">
+    Application Permissions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-deployment" class="md-nav__link">
+    Secure Deployment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inter-process-communication-ipc" class="md-nav__link">
+    Inter-Process Communication (IPC)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-security-policy-csp" class="md-nav__link">
+    Content Security Policy (CSP)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-developer-actions" class="md-nav__link">
+    Additional Developer Actions
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -968,12 +1112,97 @@
 
 
 
-<div><h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h1>
+<div><h1 id="security-overview">Security Overview<a class="headerlink" href="#security-overview" title="Permanent link"></a></h1>
 <details class="warning" open="open">
 <summary>NOTE</summary>
-<p>This documentation site is still under constructions, so some details may not be included to this page.</p>
-<p>The developer SDK is planned for the beta release of the yapp store - check out the github <a href="https://github.com/yappstore/yapp-sdk">repository</a> for more information</p>
-</details></div>
+<p>This documentation site is still under construction, so some details may not be included on this page.</p>
+<p>The developer SDK is planned for the beta release of the yapp store - check out the GitHub <a href="https://github.com/yappstore/yapp-sdk">repository</a> for more information.</p>
+</details>
+<p>At yappstore.ai, we prioritize the security of our platform and the applications it hosts. Our platform leverages the robust and secure foundation of <a href="https://tauri.app/">Tauri</a> to extend additional security measures, ensuring a safe environment for both developers and users. This document outlines essential security practices that developers should follow when publishing their applications on yappstore.ai.</p>
+<p><strong>Disclaimer:</strong> yappstore.ai utilizes Tauri as a part of its product but is not officially affiliated with Tauri. All uses of Tauri are unmodified and align with what is released by the Tauri Programme within the Commons Conservancy.</p>
+<h2 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permanent link"></a></h2>
+<p>Environment variables are commonly used to store configuration settings and sensitive information, such as API keys and database credentials. However, improper handling of these variables can lead to security vulnerabilities. Here are some guidelines to manage environment variables securely:</p>
+<ul>
+<li>
+<p><strong>Avoid Storing Sensitive Data in Frontend Code</strong>: Ensure that sensitive information is not exposed in your frontend code. Instead, keep such data securely in the backend where it is not accessible to users.</p>
+</li>
+<li>
+<p><strong>Use Environment Variables Correctly</strong>: Only load environment variables in a secure and controlled manner. Avoid hardcoding sensitive information directly into your application code. Utilize environment files (.env) and ensure they are not included in your version control.</p>
+</li>
+</ul>
+<p>???+ danger "Heads up"
+      Secure environment variable assignment within the application submission form is currently in development.</p>
+<ul>
+<li><strong>Access Control</strong>: Restrict access to environment variables to only those parts of your application that require them. Implement access controls to limit exposure and potential misuse.</li>
+</ul>
+<h2 id="secure-coding-practices">Secure Coding Practices<a class="headerlink" href="#secure-coding-practices" title="Permanent link"></a></h2>
+<p>Implementing secure coding practices is essential to protect your application from common vulnerabilities. Here are some key practices to follow:</p>
+<ul>
+<li>
+<p><strong>Input Validation</strong>: Always validate and sanitize user inputs to prevent injection attacks, such as SQL injection or cross-site scripting (XSS).</p>
+</li>
+<li>
+<p><strong>Use Secure Libraries and Frameworks</strong>: Ensure that you are using secure, well-maintained libraries and frameworks. Regularly update dependencies to patch known vulnerabilities.</p>
+</li>
+<li>
+<p><strong>Error Handling</strong>: Implement proper error handling to avoid exposing sensitive information through error messages. Ensure that your application gracefully handles unexpected errors.</p>
+</li>
+</ul>
+<h2 id="data-protection">Data Protection<a class="headerlink" href="#data-protection" title="Permanent link"></a></h2>
+<p>Protecting user data is crucial. Follow these guidelines to ensure data protection:</p>
+<ul>
+<li>
+<p><strong>Encryption</strong>: Encrypt sensitive data both in transit and at rest. Use strong encryption algorithms to protect data from unauthorized access.</p>
+</li>
+<li>
+<p><strong>Minimize Data Exposure</strong>: Only collect and store data that is necessary for your application's functionality. Avoid storing unnecessary sensitive information.</p>
+</li>
+<li>
+<p><strong>Access Control</strong>: Implement strict access controls to limit who can access sensitive data. Use role-based access control (RBAC) to ensure that only authorized users have access to critical functions and data.</p>
+</li>
+</ul>
+<h2 id="application-permissions">Application Permissions<a class="headerlink" href="#application-permissions" title="Permanent link"></a></h2>
+<p>Requesting permissions for your application should be done judiciously. Overly broad permissions can pose security risks:</p>
+<ul>
+<li><strong>Request Only Necessary Permissions</strong>: Ask for only the permissions your application genuinely needs to function. This minimizes the risk if your application is compromised.</li>
+<li><strong>Justify Permission Requests</strong>: Provide clear justifications for each permission request. Users should understand why your application needs specific permissions and how it benefits them.</li>
+<li><strong>Review Process</strong>: Note that the more permissions your application requests, the longer the review process may take. Ensure that you have strong justifications for all requested permissions to expedite the review.</li>
+</ul>
+<details class="danger" open="open">
+<summary>Heads up</summary>
+<p>Native API is not yet developed - so permissions requests are currently disabled.</p>
+</details>
+<h2 id="secure-deployment">Secure Deployment<a class="headerlink" href="#secure-deployment" title="Permanent link"></a></h2>
+<p>Deploying your application securely is as important as developing it securely. Follow these practices to ensure a secure deployment:</p>
+<ul>
+<li><strong>Code Signing</strong>: Sign your application code to verify its authenticity and integrity. Code signing helps prevent unauthorized modifications and assures users that the application comes from a trusted source.</li>
+</ul>
+<p>???+ danger "Heads up"
+      Code signing is a process that involves using a digital certificate to sign executables and scripts, ensuring that the software hasn't been altered or compromised since it was signed by the developer. This is done to prevent operating systems from flagging it as potentially dangerous. We are planning on rolling out methods of helping developers easily streamline this process. We are still in MVP - So this will be done in later releases.</p>
+<ul>
+<li><strong>Regular Updates</strong>: Keep your application and its dependencies updated. Regular updates help patch security vulnerabilities and improve overall security.</li>
+<li><strong>Monitoring and Logging</strong>: Implement monitoring and logging to detect and respond to security incidents. Monitor application performance and log security-relevant events to identify potential threats.</li>
+</ul>
+<h2 id="inter-process-communication-ipc">Inter-Process Communication (IPC)<a class="headerlink" href="#inter-process-communication-ipc" title="Permanent link"></a></h2>
+<p>IPC allows isolated processes to communicate securely and is key to building more complex applications. yappstore.ai leverages Tauri's IPC features to enhance security and performance:</p>
+<ul>
+<li><strong>Events</strong>: Use one-way IPC messages for lifecycle events and state changes. Events can be emitted by both the frontend and backend.</li>
+<li><strong>Commands</strong>: Use IPC commands to invoke Rust functions from the frontend. This mechanism ensures secure data exchange and function invocation.</li>
+<li><strong>Isolation Pattern</strong>: yappstore.ai implements an <a href="https://v2.tauri.app/concept/inter-process-communication/isolation/">isolation pattern</a> to enhance security by intercepting and modifying IPC messages before they reach the core application. This pattern protects against malicious frontend calls and ensures safe message handling.</li>
+</ul>
+<h2 id="content-security-policy-csp">Content Security Policy (CSP)<a class="headerlink" href="#content-security-policy-csp" title="Permanent link"></a></h2>
+<p>To prevent common web-based vulnerabilities like cross-site scripting (XSS), yappstore.ai enforces a strict Content Security Policy (CSP). CSP settings restrict the loading of untrusted content and ensure that only trusted sources are allowed.</p>
+<h2 id="additional-developer-actions">Additional Developer Actions<a class="headerlink" href="#additional-developer-actions" title="Permanent link"></a></h2>
+<p>To maintain a secure application, developers should:</p>
+<ol>
+<li><strong>Stay Updated</strong>: Regularly update all parts of the development stack, from yappstore.ai itself to all dependencies and tools.</li>
+<li><strong>Audit Dependencies</strong>: Carefully select and regularly audit third-party libraries for vulnerabilities.</li>
+<li><strong>Implement Secure Practices</strong>: Incorporate secure coding practices from the outset and perform comprehensive security testing.</li>
+<li><strong>User Education</strong>: Communicate the importance of security features and practices to users, ensuring they understand the application's safety measures.</li>
+<li><strong>Address Threat Models</strong>: Proactively address each identified threat model with specific mitigation strategies, from securing the development environment to implementing runtime protections.</li>
+<li><strong>Secure Content Loading</strong>: Adhere strictly to the Content Security Policy (CSP) recommendations to prevent unauthorized content from being loaded into the application.</li>
+</ol>
+<p>By following these security guidelines, you can contribute to creating a safe and trustworthy environment on yappstore.ai. Our platform, enhanced with extended security measures, ensures that your applications are well-protected, allowing you to focus on innovation and development.</p></div>
 
               
             </article>
